@@ -1,0 +1,22 @@
+{
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "google/docker-registry",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 5000, "hostPort": 5000, "protocol": "tcp"}
+      ]
+    }
+  },
+  "id": "/docker-registry",
+  "instances": 1,
+  "cpus": 0.25,
+  "mem": 512,
+  "ports": [5000],
+  "uris": [],
+  "env": {
+    "GCS_BUCKET": "kludge-registry",
+    "GCP_OAUTH2_REFRESH_TOKEN": "1/pmm69eyOsdtwqcWI7v6GF_KPggMEvzZXo4cwVCm4ZDk"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "shakr/statsd-influxdb",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 8125, "hostPort": 0, "servicePort": 11000, "protocol": "udp" }
+      ]
+    }    
+  },
+  "id": "/stats/statsd",
+  "instances": 1,
+  "cpus": 0.25,
+  "mem": 256,
+  "uris": [],
+  "env": {
+    "INFLUXDB_HOST": "influxdb.marathon.mesos",
+    "INFLUXDB_NAME": "site_dev",
+    "INFLUXDB_USER": "site_dev",
+    "INFLUXDB_PASS": "site_dev",
+    "STATSD_DEBUG": "true"
+  }
+}

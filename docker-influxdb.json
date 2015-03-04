@@ -1,0 +1,19 @@
+{
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "tutum/influxdb",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 8086, "hostPort": 0, "servicePort": 8086, "protocol": "tcp" },
+        { "containerPort": 8083, "hostPort": 0, "servicePort": 8083, "protocol": "tcp" }
+      ]
+    }    
+  },
+  "id": "influxdb",
+  "instances": 1,
+  "cpus": 0.5,
+  "mem": 1024,
+  "ports": [8086],
+  "uris": []
+}
