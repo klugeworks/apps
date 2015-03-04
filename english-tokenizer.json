@@ -2,13 +2,13 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "10.213.221.89:5000/bbnt/english-tokenizer:v0.1.2"
+      "image": "10.213.221.89:5000/bbnt/english-tokenizer:v0.1.13"
     }    
   },
   "id": "/tokenizer/english",
   "instances": 1,
   "cpus": 1.0,
   "mem": 5120,
-  "cmd": "tokenize-redis -l /lpck -r redis.marathon.mesos -src english_audio -snk english_results -vv",
+  "cmd": "tokenize-redis -l /lpck -r redis.marathon.mesos -src kluge:stt:english -vv",
   "uris": []
 }
