@@ -5,7 +5,7 @@
       "image": "pdiorio/kluge_web:1.4",
       "network": "BRIDGE",
       "portMappings": [
-        { "containerPort": 5000, "hostPort": 0, "servicePort": 5000, "protocol": "tcp" }
+        { "containerPort": 5000, "hostPort": 0, "servicePort": 5055, "protocol": "tcp" }
       ]
     }    
   },
