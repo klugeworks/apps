@@ -15,5 +15,8 @@
   "cpus": 0.5,
   "mem": 1024,
   "ports": [8086],
-  "uris": []
+  "uris": [],
+  "env": {
+    "PRE_CREATE_DB": "site_dev"
+  }
 }

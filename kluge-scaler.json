@@ -1,0 +1,13 @@
+{
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "pdiorio/kluge_scaler:1.0"
+    }    
+  },
+  "id": "kluge-scaler",
+  "instances": 1,
+  "cpus": 0.1,
+  "mem": 256,
+  "uris": []
+}

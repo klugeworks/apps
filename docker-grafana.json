@@ -2,10 +2,10 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "ryaneleary/grafana:0.1.1",
+      "image": "tutum/grafana",
       "network": "BRIDGE",
       "portMappings": [
-        { "containerPort": 80, "hostPort": 0, "servicePort": 0, "protocol": "tcp" }
+        { "containerPort": 80, "hostPort": 0, "servicePort": 4000, "protocol": "tcp" }
       ]
     }
   },
@@ -16,9 +16,11 @@
   "ports": [80],
   "uris": [],
   "env": {
-    "INFLUXDB_SRV": "_influxdb._tcp.marathon.mesos",
-    "INFLUXDB_NAME": "site_dev",
-    "INFLUXDB_USER": "site_dev",
+    "INFLUXDB_PROTO": "http",
+    "INFLUXDB_HOST": "influxdb.marathon.mesos",
+    "INFLUXDB_PORT": "8086",
+    "INFLUXDB_NAME": "root",
+    "INFLUXDB_USER": "root",
     "INFLUXDB_PASS": "site_dev",
     "HTTP_PASS": "grafana",
     "INFLUXDB_IS_GRAFANADB": "true"

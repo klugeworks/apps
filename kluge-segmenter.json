@@ -1,0 +1,13 @@
+{
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "pdiorio/kluge_segmenter:1.0"
+    }    
+  },
+  "id": "kluge-segmenter",
+  "instances": 1,
+  "cpus": 0.1,
+  "mem": 256,
+  "uris": []
+}
