@@ -2,7 +2,7 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "pdiorio/kluge_web:1.4",
+      "image": "ryaneleary/kluge_web:1.5",
       "network": "BRIDGE",
       "portMappings": [
         { "containerPort": 5000, "hostPort": 0, "servicePort": 5055, "protocol": "tcp" }
@@ -11,7 +11,7 @@
   },
   "id": "kluge-web",
   "instances": 2,
-  "cpus": 0.5,
+  "cpus": 0.25,
   "mem": 256,
   "uris": []
 }

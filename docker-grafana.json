@@ -19,9 +19,9 @@
     "INFLUXDB_PROTO": "http",
     "INFLUXDB_HOST": "influxdb.marathon.mesos",
     "INFLUXDB_PORT": "8086",
-    "INFLUXDB_NAME": "root",
+    "INFLUXDB_NAME": "site_dev",
     "INFLUXDB_USER": "root",
-    "INFLUXDB_PASS": "site_dev",
+    "INFLUXDB_PASS": "root",
     "HTTP_PASS": "grafana",
     "INFLUXDB_IS_GRAFANADB": "true"
   }

@@ -1,0 +1,14 @@
+{
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "pdiorio/kluge_segmenter:1.0"
+    }    
+  },
+  "id": "streams/npr",
+  "instances": 1,
+  "cpus": 0.1,
+  "mem": 256,
+  "uris": [],
+  "cmd": "/segmenter/env/bin/python /segmenter/segmenter2.py -k http://kluge-web.marathon.mesos:5055 -p http://nprdmp.ic.llnwd.net/stream/nprdmp_live01_mp3"
+}

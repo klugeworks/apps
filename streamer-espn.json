@@ -5,9 +5,10 @@
       "image": "pdiorio/kluge_segmenter:1.0"
     }    
   },
-  "id": "kluge-segmenter",
+  "id": "streams/espn",
   "instances": 1,
   "cpus": 0.1,
   "mem": 256,
-  "uris": []
+  "uris": [],
+  "cmd": "/segmenter/env/bin/python /segmenter/segmenter2.py -k http://kluge-web.marathon.mesos:5055"
 }
