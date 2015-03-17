@@ -10,5 +10,5 @@
   "cpus": 0.1,
   "mem": 256,
   "uris": [],
-  "cmd": "/segmenter/env/bin/python /segmenter/segmenter2.py -k http://kluge-web.marathon.mesos:5055 -p http://nprdmp.ic.llnwd.net/stream/nprdmp_live01_mp3"
+  "cmd": "/segmenter/env/bin/python /segmenter/segmenter2.py -k http://demo-web.marathon.mesos:5055 -p http://nprdmp.ic.llnwd.net/stream/nprdmp_live01_mp3"
 }
