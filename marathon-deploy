@@ -4,7 +4,7 @@ function jsonval {
     echo ${temp##*|}
 }
 
-MARATHON_HOST="10.213.221.89:8080"
+MARATHON_HOST="10.0.2.15:8080"
 FILE=$1
 
 if [[ $# -ne 1 ]]; then
@@ -18,5 +18,5 @@ app_id=`jsonval | cut -d " " -f 2`
 
 
 echo "Submitting application: $app_id"
-curl -X PUT -H "Content-Type: application/json" http://10.213.221.89:8080/v2/apps/$app_id -d@$FILE
+curl -X PUT -H "Content-Type: application/json" http://master.mesos:8080/v2/apps/$app_id -d@$FILE
 echo ""

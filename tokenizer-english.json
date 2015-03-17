@@ -1,0 +1,14 @@
+{
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "bbnt/tokenizer:v0.1"
+    }    
+  },
+  "id": "/tokenizer/english",
+  "instances": 1,
+  "cpus": 0.9,
+  "mem": 5120,
+  "cmd": "tokenize-redis -l $MESOS_SANDBOX/ -r redis.marathon.mesos -src kluge:stt:english -s statsd.stats.marathon.mesos:31990 -c $MESOS_TASK_ID -vv",
+  "uris": ["hdfs://master:8020/bbn/tokenizer/lpck/9.0/20150316/english2k.zip"]
+}

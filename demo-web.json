@@ -9,8 +9,8 @@
       ]
     }    
   },
-  "id": "kluge-web",
-  "instances": 2,
+  "id": "demo-web",
+  "instances": 1,
   "cpus": 0.25,
   "mem": 256,
   "uris": []
