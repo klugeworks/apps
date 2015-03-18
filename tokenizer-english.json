@@ -2,7 +2,7 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "bbnt/tokenizer:v0.1.2"
+      "image": "bbnt/tokenizer:v0.1.3"
     }    
   },
   "id": "/tokenizer/english",
@@ -10,5 +10,5 @@
   "cpus": 0.9,
   "mem": 5120,
   "cmd": "tokenize-redis -l $MESOS_SANDBOX/english2k.lpck -r tcp://redis.marathon.mesos:6379 -src kluge:stt:english -s statsd.stats.marathon.mesos:31990 -c $MESOS_TASK_ID -vv",
-  "uris": ["hdfs://master:8020/bbn/tokenizer/lpck/9.0/20150318/english2k.lpck"]
+  "uris": ["hdfs://master:8020/bbn/tokenizer/lpck/9.0/20150317/english2k.lpck"]
 }

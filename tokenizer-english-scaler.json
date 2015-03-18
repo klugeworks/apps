@@ -8,7 +8,7 @@
   "id": "/scalers/tokenizer/english",
   "instances": 1,
   "cpus": 0.1,
-  "mem": 256,
+  "mem": 50,
   "uris": [],
   "cmd": "/kluge_scaler/env/bin/python /kluge_scaler/monitor.py -l english -m http://master.mesos:8080 -w 5"
 }

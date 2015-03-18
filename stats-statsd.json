@@ -11,8 +11,8 @@
   },
   "id": "/stats/statsd",
   "instances": 1,
-  "cpus": 0.25,
-  "mem": 256,
+  "cpus": 0.1,
+  "mem": 50,
   "uris": [],
   "env": {
     "INFLUXDB_HOST": "influxdb.marathon.mesos",

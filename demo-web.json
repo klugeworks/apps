@@ -2,7 +2,7 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "ryaneleary/kluge_web:1.5",
+      "image": "ryaneleary/demo_web:1.6",
       "network": "BRIDGE",
       "portMappings": [
         { "containerPort": 5000, "hostPort": 0, "servicePort": 5055, "protocol": "tcp" }
@@ -12,6 +12,6 @@
   "id": "demo-web",
   "instances": 1,
   "cpus": 0.25,
-  "mem": 256,
+  "mem": 100,
   "uris": []
 }
